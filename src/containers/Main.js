@@ -28,6 +28,14 @@ const Main = () => {
     useState(true);
 
   useEffect(() => {
+    if (localStorage.getItem("isDark") === null) {
+      // If 'isDark' is not in localStorage, set it to false (light theme) by default
+      localStorage.setItem("isDark", JSON.stringify(false));
+      setIsDark(false); // Also update the state
+    }
+  }, []); // Run only once on mount
+
+  useEffect(() => {
     if (splashScreen.enabled) {
       const splashTimer = setTimeout(
         () => setIsShowingSplashAnimation(false),

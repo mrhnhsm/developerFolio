@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Raihan Hasyim",
+  title: "Hallo, Saya Raihan",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Front-End software developer and GIS Developer 🚀 who is passionate about building Web and Mobile applications with JavaScript / ReactJs / React Native / NodeJs and several Other library frameworks"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/mrhnhsm",
+  linkedin: "https://www.linkedin.com/in/m-raihan-efdin-hasyim-78b15a2a2/",
+  gmail: "rayhanhasyim00@gmail.com",
+  gitlab: "https://gitlab.com/rayhanhasyim00",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,16 +47,13 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What Are My Skills",
+  subTitle: "FRONT-END DEVELOPER, GIS DEVELOPER, AND BACK-END DEVELOPER",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -73,24 +69,20 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "Reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Android",
+      fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "Nodejs",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
       skillName: "npm",
@@ -101,20 +93,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +106,17 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Universitas Sumatera Utara",
+      logo: require("./assets/images/Raihan/logo_usu.png"),
+      subHeader: "Ilmu Komputer",
+      duration: "Agustus 2020 - April 2024",
+      desc: "Memiliki Keahlian Software Engineer",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Bahasa Pemrograman (C, C++, C#, Java, Pascal)",
+        "Web Development (HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL)",
+        "Designer (Figma, Sketch, Adobe Ilustrator, Canva)",
+        "Matematika Ilmiah (MATLAB)"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -158,11 +132,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "50%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +148,42 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Enginner",
+      company: "Dinas PPKB Kota Tebing Tinggi",
+      companylogo: require("./assets/images/Raihan/logo_tebing.png"),
+      date: "Februari 2023 – Juni 2023",
+      desc: "Membangun Aplikiasi Untuk Pemeriksaan Calon Pengantin",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Melakukan Analisis Keperluan User",
+        "Membuat Arsitektur Umum Sistem",
+        "Membangun Aplikasi Berbasis Website"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Social Media Marketing dan Software Engineer",
+      company: "Forum GenRe Sumatera Utara",
+      companylogo: require("./assets/images/Raihan/forum_genre_sumut.png"),
+      date: "Agustus 2022 – Present",
+      desc: "Manage Content dan Membangun Dashboard Forum GenRe Sumateara Utara",
+      descBullets: [
+        "Membuat Schedule Konten Setiap Harinya",
+        "Membuat ide konten yang menarik",
+        "Membuat Dashboard Forum GenRe Sumut"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Enginner dan GIS Enginner",
+      company: "PT. Perkebunan Nusantara 4 Regional 2 Medan",
+      companylogo: require("./assets/images/Raihan/Logo_PTPN4.png"),
+      date: "Agustus 2024 – Present",
+      desc: "Membangun Project aplikasi kebutuhan bisnis perusahaan",
+      descBullets: [
+        "Mengembangkan Sistem Informasi Berbasis GIS dengan React.Js",
+        "Mengembangkan Antarmuka Pengguna untuk Data GIS Dengan React",
+        "Menganalisis Data Spasial GIS",
+        "Mengintegrasikan GIS dengan Sistem Yang Ada",
+        "Membuat Aplikasi Kebutuhan Manjerial"
+      ]
     }
   ]
 };
@@ -206,37 +193,92 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "DARI PERUSAHAAN DAN ORGANISASI YANG SAYA JALANI",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/Raihan/lpk_jepang.jpeg"),
+      projectName: "SPK dengan Metode SAW dan SWARA",
+      projectDesc: "Project Akhir Kuliah"
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://saayahealth.com/"
+      //   }
+      //   //  you can add extra buttons here.
+      // ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      image: require("./assets/images/Raihan/catin_aplikasi.jpeg"),
+      projectName: "Aplikiasi Pemeriksaan CATIN dengan Metode Certainty Factor",
+      projectDesc: "Project Magang Dinas PPKB"
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/Raihan/dhbb.png"),
+      projectName: "Aplikasi Catalogue Barang PTPN 4",
+      projectDesc: "Project Perusahaan PTPN4 "
+      // footerLink: [
+      //   {
+      //     name: "Kunjungi Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/Raihan/eTracking.png"),
+      projectName: "Aplikasi Etracking Komisaris PTPN 4",
+      projectDesc: "Project Perusahaan PTPN4 "
+      // footerLink: [
+      //   {
+      //     name: "Kunjungi Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/Raihan/AlbumTBM.jpeg"),
+      projectName: "Aplikasi Pemantau dan Manage Pokok TBM PTPN4",
+      projectDesc: "Project Perusahaan PTPN4 "
+      // footerLink: [
+      //   {
+      //     name: "Kunjungi Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/Raihan/Produksi_Web.jpeg"),
+      projectName: "Aplikasi Website Produksi PKS PTPN4",
+      projectDesc: "Project Perusahaan PTPN4 "
+      // footerLink: [
+      //   {
+      //     name: "Kunjungi Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/Raihan/Aplikasi_Produksi_Mobile.jpeg"),
+      projectName: "Aplikasi Mobile Produksi PKS PTPN4",
+      projectDesc: "Project Perusahaan PTPN4 "
+      // footerLink: [
+      //   {
+      //     name: "Kunjungi Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -247,55 +289,66 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle: "Achievements And Certifications yang saya dapatkan!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Elticom 2024",
+      subtitle: "Menjadi pemilik jurnal Internasional pada Event Elticom 2024",
+      image: require("./assets/images/Raihan/eltciom.png"),
+      imageAlt: "Elticom Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://drive.google.com/file/d/18gRzba8KVV7JiaqeNv6TSzv3QTI_Z5EE/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Dicoding",
+      subtitle: "Belajar Dasar Pemrograman Web",
+      image: require("./assets/images/Raihan/dicoding.jpeg"),
+      imageAlt: "Dicoding Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1D0vdZmvRYBe7Tde8k9lYrFmy2BZr8RuQ/view?usp=sharing"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Dinas PPKB Kota Tebing Tinggi",
+      subtitle: "Magang Sebagai Backend Developer dan Front-End Developer",
+      image: require("./assets/images/Raihan/logo_tebing.png"),
+      imageAlt: "Tebing Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1lh5Su-X8juTHgCwzzcOc5Q4ApaJ4eg35/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "PEMA FASILKOM-TI USU",
+      subtitle: "IT Developer Academy : UI/UX Design",
+      image: require("./assets/images/Raihan/pema.webp"),
+      imageAlt: "Fasilkom Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1FmdmsXPByWYZEQJR4p4cTe2v6OlTIKPI/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Dibimbing",
+      subtitle: "Digital Skill Fair",
+      image: require("./assets/images/Raihan/dibimbing_id_logo.jpeg"),
+      imageAlt: "Dibimbing Logo",
+      footerLink: [
+        {
+          name: "Certificat",
+          url: "https://drive.google.com/file/d/1eJoJfNUQWAqFJLxvodv5fo7ZvIC5y8ik/view?usp=sharing"
         }
       ]
     }
@@ -324,7 +377,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +396,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +409,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -365,22 +418,21 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "",
+  number: "+6282161118140",
+  email_address: "rayhanhasyim00@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
