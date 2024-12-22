@@ -148,7 +148,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Enginner",
+      role: "Software Engineer",
       company: "Dinas PPKB Kota Tebing Tinggi",
       companylogo: require("./assets/images/Raihan/logo_tebing.png"),
       date: "Februari 2023 – Juni 2023",
@@ -172,7 +172,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Software Enginner dan GIS Enginner",
+      role: "Software Engineer dan GIS Engineer",
       company: "PT. Perkebunan Nusantara 4 Regional 2 Medan",
       companylogo: require("./assets/images/Raihan/Logo_PTPN4.png"),
       date: "Agustus 2024 – Present",
